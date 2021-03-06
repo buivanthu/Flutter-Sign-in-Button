@@ -102,7 +102,7 @@ class SignInButtonBuilder extends StatelessWidget {
     }
     return Container(
       constraints: BoxConstraints(
-        maxWidth: width ?? 220,
+        maxWidth: width ?? 250,
       ),
       child: Center(
         child: Row(
