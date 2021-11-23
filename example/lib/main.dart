@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
 class SignInPage extends StatelessWidget {
   /// Show a simple "___ Button Pressed" indicator
   void _showButtonPressDialog(BuildContext context, String provider) {
-    Scaffold.of(context).showSnackBar(SnackBar(
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
       content: Text('$provider Button Pressed!'),
       backgroundColor: Colors.black26,
       duration: Duration(milliseconds: 400),
@@ -43,7 +43,7 @@ class SignInPage extends StatelessWidget {
             onPressed: () {
               _showButtonPressDialog(context, 'Email');
             },
-            backgroundColor: Colors.blueGrey[700],
+            backgroundColor: Colors.blueGrey.shade700,
             width: 220.0,
           ),
           Divider(),
